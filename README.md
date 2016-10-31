@@ -1,0 +1,2 @@
+# sod-framework
+Simplistic framework
