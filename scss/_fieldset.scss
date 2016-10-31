@@ -1,0 +1,11 @@
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 $gutter-xs;
+  padding: $gutter-xs $gutter-sm;
+
+  legend {
+    border: 0;
+    padding: 0 $gutter-sm;
+    color: inherit;
+  }
+}

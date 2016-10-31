@@ -1,0 +1,52 @@
+// ! normalize.css v3.0.2 | MIT License | git.io/normalize
+// Cherry picking from normalize.css
+
+* {
+  box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
+  &:before, &:after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  font-size: $font-size-base;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font: normal 1rem/#{$line-height-default} $font-family-default;
+}
+
+// HTML5 display definitions
+// ===========================================
+
+details,
+summary,
+main {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  vertical-align: baseline;
+}
+
+// Prevent modern browsers from displaying `audio` without controls.
+// Remove excess height in iOS 5 devices.
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+// Address `[hidden]` styling not present in IE 8/9/10.
+// Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+[hidden],
+template {
+  display: none;
+}

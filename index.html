@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SOD Framework</title>
+
+  <link rel="stylesheet" href="dist/css/sod.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="example-header">SOD Framework</h1>
+
+    <section class="example-section">
+      <h2 class="example-header">Grid</h2>
+      <div class="row m-t-3">
+        <div class="col-5 sod-text">
+          <p>The grid is a 12 col flexbox grid with a gutter.</p>
+        </div>
+        <div class="col-7 sod-show">
+          <div class="row">
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+          </div>
+          <div class="row">
+            <div class="col-1"><span class="example-grid-cell">1</span></div>
+            <div class="col-11"><span class="example-grid-cell">11</span></div>
+          </div>
+          <div class="row">
+            <div class="col-2"><span class="example-grid-cell">2</span></div>
+            <div class="col-10"><span class="example-grid-cell">10</span></div>
+          </div>
+          <div class="row">
+            <div class="col-3"><span class="example-grid-cell">3</span></div>
+            <div class="col-9"><span class="example-grid-cell">9</span></div>
+          </div>
+          <div class="row">
+            <div class="col-4"><span class="example-grid-cell">4</span></div>
+            <div class="col-8"><span class="example-grid-cell">8</span></div>
+          </div>
+          <div class="row">
+            <div class="col-5"><span class="example-grid-cell">5</span></div>
+            <div class="col-7"><span class="example-grid-cell">7</span></div>
+          </div>
+          <div class="row">
+            <div class="col-6"><span class="example-grid-cell">6</span></div>
+            <div class="col-6"><span class="example-grid-cell">6</span></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="example-header">Nested grid</h3>
+      <div class="row">
+        <div class="col-5">
+          <p>It's possible to nest the grid.</p>
+        </div>
+        <div class="col-7">
+          <div class="row">
+            <div class="col-8">
+              <span class="example-grid-cell">
+                8
+                <div class="row">
+                  <div class="col-6"><span class="example-grid-cell">6</span></div>
+                  <div class="col-6"><span class="example-grid-cell">6</span></div>
+                </div>
+              </span>
+            </div>
+            <div class="col-4"><span class="example-grid-cell">4</span></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="example-header">Exceed or deceed 12</h3>
+      <div class="row">
+        <div class="col-5">
+          <p>If you exceed the column sum of 12 the column that doesn't fit will appear on a row below and whitespace will be filled up in the spaces.</p>
+        </div>
+        <div class="col-7">
+          <div class="row">
+            <div class="col-6"><span class="example-grid-cell">6</span></div>
+            <div class="col-8"><span class="example-grid-cell">8</span></div>
+          </div>
+        </div>
+        <div class="col-5">
+          <p>If you deceed the column sum of 12 the column will float to the left and whitespace will fill out the rest of the row.</p>
+        </div>
+        <div class="col-7">
+          <div class="row">
+            <div class="col-2"><span class="example-grid-cell">2</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="example-section">
+      <h2 class="example-header">Gutters</h2>
+      <div class="row m-t-3">
+        <div class="col-5">
+          text
+        </div>
+        <div class="col-7">
+          <div class="m-l-0">m-l-0</div>
+          <div class="m-l-1">m-l-1</div>
+          <div class="m-l-2">m-l-2</div>
+          <div class="m-l-3">m-l-3</div>
+          <div class="m-l-4">m-l-4</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="example-section">
+      <h2 class="example-header">Typography</h2>
+      <p>All typography is scaled based on a modular scaling variable. By default the modular scaling variable is "Perfect fourth" (0.333)</p>
+
+      <h3 class="example-header">Headers</h3>
+      <div class="row">
+        <div class="col-5">
+
+        </div>
+        <div class="col-7">
+          <h1>Header .h1</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <h2>Header .h2</h2>
+          <p>Rem, sequi numquam. Illum, cupiditate?</p>
+          <h3>Header .h3</h3>
+          <p>Consequatur distinctio commodi illum, officiis!</p>
+          <h4>Header .h4</h4>
+          <p>Pariatur fugit maiores ab illo?</p>
+          <h5>Header .h5</h5>
+          <p>Distinctio itaque dolores consequatur magnam?</p>
+          <h6>Header .h6</h6>
+          <p>Explicabo cupiditate illo dolores corporis!</p>
+        </div>
+      </div>
+
+      <h3 class="example-header">Textual elements</h3>
+      <div class="row">
+        <div class="col-5">
+
+        </div>
+        <div class="col-7">
+          <p><abbr title="Cascading Style Sheets">CSS</abbr></p>
+          <p><mark>Highlight</mark></p>
+          <p><del>Deleted text</del></p>
+          <p><ins>Inserted text</ins></p>
+          <p><small>Small text / fine print</small></p>
+          <p><strong>Bold text</strong></p>
+          <p><em>Ttalicized text</em></p>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+  </div>
+</body>
+</html>

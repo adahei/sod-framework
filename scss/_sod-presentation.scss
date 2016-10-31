@@ -1,0 +1,25 @@
+.example-header {
+
+}
+
+.example-section {
+  margin: 0 $gutter-lg $gutter-xl;
+}
+
+.example-fieldset {
+  margin: $gutter-sm 0 $gutter-xl;
+  padding: $gutter-md;
+  legend {
+    font-size: $font-size-lg;
+  }
+}
+
+.example-grid-cell {
+  display: block;
+  background-color: rgba(0,0,0,.1);
+  color: #333;
+  font-size: $font-size-sm;
+  text-align: center;
+  padding: $gutter-xs 0;
+  margin-bottom: $gutter-xs;
+}

@@ -1,0 +1,40 @@
+//
+// SETTINGS
+//
+$modular-scaling: 0.333; // Perfect fourth
+
+
+//
+// TYPOGRAPGY
+//
+$font-size-base: 16px;
+$line-height-default: 1.1;
+$font-family-default: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-header-default: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$header-weight: 400;
+
+$font-size-sm: (1rem - $modular-scaling * .5);
+$font-size-xs: (1rem - $modular-scaling * 1);
+
+$font-size-lg: (1rem + ($modular-scaling * .5));
+$font-size-xl: (1rem + ($modular-scaling * 1));
+
+//
+// GUTTERS
+//
+$gutter-md: 1rem;
+
+$gutter-sm: ($gutter-md - ($modular-scaling * 1));
+$gutter-xs: ($gutter-md - ($modular-scaling * 2));
+
+$gutter-lg: ($gutter-md + ($modular-scaling * 1));
+$gutter-xl: ($gutter-md + ($modular-scaling * 2));
+
+
+// BREAKPOINTS
+$bp-first: 550px;
+
+//
+// GRID
+//
+$grid-cols: 12;

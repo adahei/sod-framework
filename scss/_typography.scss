@@ -1,0 +1,81 @@
+//
+// HEADERS
+//
+
+// Sizing
+@for $i from 1 through 6 {
+  h#{$i}, .h#{$i} {
+    font-size: (1rem + $modular-scaling * (6 - $i));
+  }
+}
+
+%_header_style {
+  font-family: $font-family-header-default;
+  line-height: $line-height-default;
+  margin-top: 0;
+  font-weight: $header-weight;
+}
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  @extend %_header_style;
+  margin-bottom: $gutter-sm;
+}
+
+h5, h6,
+.h5, .h6 {
+  @extend %_header_style;
+  margin-bottom: $gutter-xs;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $gutter-sm;
+}
+
+a {
+  background-color: transparent; // Remove the gray background color from active links in IE 10.
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+}
+
+// Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: $font-size-sm;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}

@@ -1,0 +1,29 @@
+$gutter-base: 1rem;
+
+$gutter-map: (
+  0: 0,
+  1: ($gutter-base / 2),
+  2: $gutter-base,
+  3: ($gutter-base * 1.5),
+  4: ($gutter-base * 3)
+);
+
+@each $style, $abbr in (margin: m, padding: p) {
+  @each $size, $value in $gutter-map {
+    .#{$abbr}-a-#{$size} { #{$style}: $value!important }
+    .#{$abbr}-t-#{$size} { #{$style}-top: $value!important }
+    .#{$abbr}-r-#{$size} { #{$style}-right: $value!important }
+    .#{$abbr}-b-#{$size} { #{$style}-bottom: $value!important }
+    .#{$abbr}-l-#{$size} { #{$style}-left: $value!important }
+
+    .#{$abbr}-x-#{$size} {
+      #{$style}-right: $value!important;
+      #{$style}-left: $value!important;
+    }
+
+    .#{$abbr}-y-#{$size} {
+      #{$style}-top: $value!important;
+      #{$style}-bottom: $value!important;
+    }
+  }
+}
