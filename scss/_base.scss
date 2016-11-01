@@ -50,3 +50,10 @@ audio:not([controls]) {
 template {
   display: none;
 }
+
+hr {
+  border: 0;
+  margin: $gutter-md 0;
+  background-color: #ccc;
+  height: 1px;
+}

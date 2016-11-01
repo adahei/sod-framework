@@ -16,10 +16,31 @@
 
 .example-grid-cell {
   display: block;
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0,0,0,.05);
   color: #333;
   font-size: $font-size-sm;
   text-align: center;
   padding: $gutter-xs 0;
   margin-bottom: $gutter-xs;
+}
+
+.example-gutters {
+  background-color: rgba(0,0,0,.05);
+  font-size: $font-size-sm;
+  > div {
+    background-color: rgba(0,0,0,.05);
+  }
+
+  span {
+    display: inline-block;
+    padding: $gutter-xs;
+    background-color: rgba(0,0,0,.05);
+  }
+}
+
+code {
+  background-color: rgba(0,0,0,.05);
+  display: inline-block;
+  padding: $gutter-xs;
+  color: crimson;
 }

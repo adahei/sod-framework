@@ -33,6 +33,12 @@ audio:not([controls]) {
 template {
   display: none; }
 
+hr {
+  border: 0;
+  margin: 1rem 0;
+  background-color: #ccc;
+  height: 1px; }
+
 h1, .h1 {
   font-size: 2.665rem; }
 
@@ -444,11 +450,27 @@ fieldset {
 
 .example-grid-cell {
   display: block;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
   color: #333;
   font-size: 0.8335rem;
   text-align: center;
   padding: 0.334rem 0;
   margin-bottom: 0.334rem; }
+
+.example-gutters {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 0.8335rem; }
+  .example-gutters > div {
+    background-color: rgba(0, 0, 0, 0.05); }
+  .example-gutters span {
+    display: inline-block;
+    padding: 0.334rem;
+    background-color: rgba(0, 0, 0, 0.05); }
+
+code {
+  background-color: rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  padding: 0.334rem;
+  color: crimson; }
 
 /*# sourceMappingURL=sod.css.map */
